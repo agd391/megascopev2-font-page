@@ -1,16 +1,15 @@
 @font-face {
-    src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2"),
-         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff"),
-        url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.ttf') format('truetype');
+    src: url("fonts/MegascopeV2Variable[SCOP\,wght].woff2") format("woff2"),
+        url('fonts/MegascopeV2Variable[SCOP\,wght].ttf') format('truetype');
 
-    font-family: 'Forma';
+    font-family: 'MegascopeV2';
     font-style: normal;
     font-weight: normal;
     }
     
     body{
     background-color: lightsteelblue;
-    font-family: 'Forma';
+    font-family: 'MegascopeV2';
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -57,9 +56,11 @@ h3{
 
 @keyframes weightChange {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "SCOP" 0, "wght" 100;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
+
+    50%{
+        font-variation-settings: "SCOP" 100, "wght" 700;
     }
     
 }
