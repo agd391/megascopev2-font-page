@@ -7,6 +7,10 @@
     font-weight: normal;
     }
     
+    /* *{
+        border: blue 3px dashed;
+    } */
+
     body{
     background-color: lightsteelblue;
     font-family: 'MegascopeV2';
