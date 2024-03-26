@@ -12,7 +12,8 @@
     } */
 
     body{
-    background-color: lightsteelblue;
+    background-color: rgb(255, 255, 255);
+    background-image: url('Hero1.svg');
     font-family: 'MegascopeV2';
 }
 /* how the page wrapper will appear on mobile */
@@ -25,13 +26,19 @@
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 25px;
+grid-gap: 100px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "h v"
-    "a a";
+    "b h"
+    "v v"
+    "a l";
 }
+
+.blank{
+grid-area: b;
+}
+
 
 .history {
 grid-area: h;
@@ -44,19 +51,102 @@ grid-area: v;
 .alphabet {
 grid-area: a;
 }
+
+.language{
+grid-area: l;
+}
 }
 /* CSS for the footer */
 footer{
-    background-color: gray;
+    background-color: black;
+    font-family: "Exo", sans-serif;
+    color: white;
+    position: relative;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:150px;
+}
+
+
+h1{
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  color: #FF2EAC;
+  text-shadow: 2px 1px #23B0FF;
+  font-size: 40px;
+
 }
 
 /* variable font animation */
 h3{
     font-weight:20; 
+    color: #FF2EAC;
+    text-shadow: 2px 1px #23B0FF;
+    position: relative;
     text-align: center;
     font-size: 5em;
     animation: weightChange 7s infinite;
+
 }
+
+h4{
+    font-weight:0; 
+    text-align: center;
+    font-size: 5em;
+    animation: scopeChange 7s infinite;
+}
+        
+ @keyframes scopeChange {
+     0%, 100%{
+        font-variation-settings: "wght" 100, "SCOP" 0;
+        }
+    50%{font-variation-settings: "wght" 100, "SCOP" 100;}
+ }
+    
+ h5{
+    font-weight:0; 
+    text-align: center;
+    font-size: 5em;
+    animation: wghtChange 7s infinite;
+}
+        
+ @keyframes wghtChange {
+     0%, 100%{
+        font-variation-settings: "wght" 0, "SCOP" 50;
+        }
+    50%{font-variation-settings: "wght" 800, "SCOP" 50;}
+ }
+
+.alternate-paragraph{
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+}
+
+.alternate-paragraph-bold{
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+.alphabet-set{
+    font-family: "MegascopeV2";
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-variation-settings: "SCOP" 70, "wght" 450;
+    letter-spacing: 1.5px;
+    
+}
+
+.logo{
+  font-family: "MegascopeV2";
+  font-optical-sizing: auto;
+  font-variation-settings: "SCOP" 70, "wght" 450;
+}
+
+
 
 @keyframes weightChange {
     0%, 100%{
