@@ -1,4 +1,4 @@
-# type-single-page
+#megascopev2-font-page
  css grid
  variable fonts
  any other important details
