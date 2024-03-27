@@ -30,7 +30,7 @@ grid-gap: 100px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "b h"
+    "h b"
     "v v"
     "a l";
 }
@@ -60,12 +60,13 @@ grid-area: l;
 footer{
     background-color: black;
     font-family: "Exo", sans-serif;
+    padding-top: 10px;
     color: white;
     position: relative;
     bottom:0;
     left:0;
     width:100%;
-    height:150px;
+    height:220px;
 }
 
 
@@ -85,7 +86,7 @@ h3{
     text-shadow: 2px 1px #23B0FF;
     position: relative;
     text-align: center;
-    font-size: 5em;
+    font-size: 11em;
     animation: weightChange 7s infinite;
 
 }
@@ -146,6 +147,13 @@ h4{
   font-variation-settings: "SCOP" 70, "wght" 450;
 }
 
+a {
+    color:#FF2EAC;
+}
+  
+a:hover {
+    color: rgb(0, 0, 0);
+  }
 
 
 @keyframes weightChange {
