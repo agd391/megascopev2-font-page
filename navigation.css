@@ -27,7 +27,7 @@
       padding-top:10px;
       top: 100%;
       left: 0;
-      background: gray;
+      background: black;
       width: 100%;
       transform: scale(1,0);
       transform-origin: top;
@@ -148,7 +148,7 @@
       content: '';
       display: block;
       height: 3px;
-      background: rgb(255, 255, 255);
+      background: white;
       position: absolute;
       top: 1.1em;
       left: 0;

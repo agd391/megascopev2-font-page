@@ -12,8 +12,8 @@
     } */
 
     body{
-    background-color: rgb(255, 255, 255);
-    background-image: url('Hero1.svg');
+    background-color: rgb(0, 0, 0);
+    background-image: url('Hero3.svg');
     font-family: 'MegascopeV2';
 }
 /* how the page wrapper will appear on mobile */
@@ -26,7 +26,7 @@
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 100px;
+grid-gap: 90px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
@@ -58,15 +58,16 @@ grid-area: l;
 }
 /* CSS for the footer */
 footer{
-    background-color: black;
+    background-color: white;
     font-family: "Exo", sans-serif;
-    padding-top: 10px;
-    color: white;
+    font-size: 20px;
+    -webkit-text-fill-color: black;
     position: relative;
+    padding-top: .5px;
     bottom:0;
-    left:0;
+    padding-left: 15px;
     width:100%;
-    height:220px;
+    height:230px;
 }
 
 /* main paragraph headers*/
@@ -83,7 +84,7 @@ h1{
 h3{
     font-weight:20; 
     color: #FF2EAC;
-    text-shadow: 2px 1px #23B0FF;
+    text-shadow: 5px 3px #23B0FF;
     position: relative;
     text-align: center;
     font-size: 11em;
@@ -94,6 +95,7 @@ h3{
 h4{
     font-weight:0; 
     text-align: center;
+    color: white;
     font-size: 5em;
     animation: scopeChange 7s infinite;
 }
@@ -108,6 +110,7 @@ h4{
  h5{
     font-weight:0; 
     text-align: center;
+    color: white;
     font-size: 5em;
     animation: wghtChange 7s infinite;
 }
@@ -123,6 +126,7 @@ h4{
   font-family: "Exo", sans-serif;
   font-optical-sizing: auto;
   font-size: 20px;
+  color: white;
 }
 
 .alternate-paragraph-bold{
@@ -130,6 +134,7 @@ h4{
     font-optical-sizing: auto;
     font-weight: bold;
     font-size: 25px;
+    color: white;
   }
 
 .alphabet-set{
@@ -138,6 +143,7 @@ h4{
     font-size: 20px;
     font-variation-settings: "SCOP" 70, "wght" 450;
     letter-spacing: 1.5px;
+    color: white;
     
 }
 
@@ -152,7 +158,8 @@ a {
 }
   
 a:hover {
-    color: rgb(0, 0, 0);
+    color: #23B0FF;
+    text-shadow: 2px 1px #FF2EAC;
   }
 
 
