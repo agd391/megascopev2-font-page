@@ -77,9 +77,11 @@ h1{
   color: #FF2EAC;
   text-shadow: 2px 1px #23B0FF;
   font-size: 40px;
+  position: relative;
 
 }
 
+   
 /* variable font animation */
 h3{
     font-weight:20; 
@@ -87,9 +89,8 @@ h3{
     text-shadow: 5px 3px #23B0FF;
     position: relative;
     text-align: center;
-    font-size: 11em;
+    font-size: 11rem;
     animation: weightChange 7s infinite;
-
 }
 
 h4{
